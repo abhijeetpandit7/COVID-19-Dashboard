@@ -1,0 +1,8 @@
+/node_modules
+/public/India_Districts
+/public/.ipynb_checkpoints
+*.ipynb
+*.csv
+npm-debug.log
+.DS_Store
+/*.env

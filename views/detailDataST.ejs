@@ -1,0 +1,41 @@
+<!-- Districtwise cases table -->
+
+    <div class="sub-section mt-4 mx-auto d-flex">
+            <div class="container-table pb-4 pr-1" style="width: 62%;">
+                <div class="scroll-state">
+                    <table id="table" class="table table-borderless table-hover ">
+                        <thead>
+                            <tr class="myHeader navbar-fixed-top">
+                                <th scope="col">Name</th>
+                                <th scope="col">Confirmed</th>
+                                <th scope="col">Active</th>
+                                <th scope="col">Recovered</th>
+                                <th scope="col">Deceased</th>
+                                <th scope="col">Tests</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="mt-2" style="width: 50%">
+                <iframe src="<%= state %>.html" class="map-state"></iframe>
+            </div>
+    </div>
+
+    <div class="sub-section mt-4 pb-4 pt-4">
+            <div class="plot-section mx-auto d-flex ">
+                <iframe width="50%" class="state-total-cases" height="100%" frameborder="0" scrolling="no" src=""></iframe>
+                <iframe width="50%" class="state-daily-cases" height="100%" frameborder="0" scrolling="no" src=""></iframe>
+            </div>
+    </div>
+
+    <div class="sub-section mt-4 pb-4 pt-4">
+        <div class="sub-section">
+            <div class="plot-section mx-auto d-flex justify-content-around">
+                <iframe width="50%" class="state-test-cases" height="100%" frameborder="0" scrolling="no" src=""></iframe>
+                <iframe width="50%" class="state-growth-rate" height="100%" frameborder="0" scrolling="no" src=""></iframe>
+            </div>
+        </div>
+    </div>

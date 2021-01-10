@@ -1,0 +1,79 @@
+<!-- State Detail Page -->
+<%- include('header'); -%>
+	
+	<%- include('keyDataST') -%>
+
+	<%- include('detailDataST') -%>
+
+	<span class="hidden"><%= code %></span>
+	<span class="hidden"><%= state %></span>
+	
+	<script>
+		//Statecode & name as selected from drop down
+		var stateCode = document.getElementsByClassName('hidden')[0].textContent;
+		var stateValue = document.getElementsByClassName('hidden')[1].textContent;
+		//If user directly enters state name in url
+		states = {
+			'Andaman and Nicobar Islands':'AN' ,	'Andhra Pradesh':'AP',	'Arunachal Pradesh':'AR',	'Assam':'AS',	
+			'Bihar':'BR','Chandigarh':'CH',	'Chhattisgarh':'CT',	'Dadra and Nagar Haveli and Daman and Diu':'DN',	
+			'Delhi':'DL',	'Goa':'GA',	'Gujarat':'GJ',	'Haryana':'HR',	'Himachal Pradesh':'HP',	
+			'Jammu and Kashmir':'JK',	'Jharkhand':'JH',	'Karnataka':'KA',	'Kerala':'KL',	'Ladakh':'LA',	
+			'Lakshadweep':'LD',	'Madhya Pradesh':'MP',	'Maharashtra':'MH',	'Manipur':'MN',	'Meghalaya':'ML',	
+			'Mizoram':'MZ',	'Nagaland':'NL',	'Odisha':'OR',	'Puducherry':'PY',	'Punjab':'PB',	'Rajasthan':'RJ',	
+			'Sikkim':'SK',	'Tamil Nadu':'TN',	'Telangana':'TG',	'Tripura':'TR',	'Uttar Pradesh':'UP',	
+			'Uttarakhand':'UK',	'West Bengal':'WB'
+		}		
+		if(!stateCode){
+			stateCode = states[stateValue]
+		}	
+		// Assign states to respective Plotly url
+		statesPlot = {
+			'Total':{
+				'AN':'11',	'AP':'13',	'AR':'15',	'AS':'17',	'BR':'19',
+				'CH':'21',	'CT':'23',	'DL':'25',	'DN':'27',
+				'GA':'29',	'GJ':'31',	'HP':'33',	'HR':'35',	'JH':'37',	'JK':'39',
+				'KA':'41',	'KL':'43',	'LA':'45',	'LD':'47',	'MH':'49',	'ML':'51',
+				'MN':'53',	'MP':'55',	'MZ':'57',	'NL':'59',	'OR':'61',	'PB':'63',
+				'PY':'65',	'RJ':'67',	'SK':'69',	'TG':'71',	'TN':'73',	'TR':'75',
+				'UP':'77',	'UT':'79',	'WB':'81'
+			},
+			'Daily':{
+				'AN':'83',	'AP':'85',	'AR':'87',	'AS':'89',	'BR':'91',
+				'CH':'93',	'CT':'95',	'DL':'97',	'DN':'99',
+				'GA':'101',	'GJ':'103',	'HP':'105',	'HR':'107',	'JH':'109',	'JK':'111',
+				'KA':'113',	'KL':'115',	'LA':'117',	'LD':'119',	'MH':'121',	'ML':'123',
+				'MN':'125',	'MP':'127',	'MZ':'129',	'NL':'131',	'OR':'133',	'PB':'135',
+				'PY':'137',	'RJ':'139',	'SK':'141',	'TG':'143',	'TN':'145',	'TR':'147',
+				'UP':'149',	'UT':'151',	'WB':'153'
+			},
+			'Test':{
+				'AN':'1',	'AP':'3',	'AR':'5',	'AS':'7',	'BR':'9',
+				'CH':'11',	'CT':'13',	'DL':'15',	'DN':'17',
+				'GA':'19',	'GJ':'21',	'HP':'23',	'HR':'25',	'JH':'27',	'JK':'29',
+				'KA':'31',	'KL':'33',	'LA':'35',	'LD':'37',	'MH':'39',	'ML':'41',
+				'MN':'43',	'MP':'45',	'MZ':'47',	'NL':'49',	'OR':'51',	'PB':'53',
+				'PY':'55',	'RJ':'57',	'SK':'59',	'TG':'61',	'TN':'63',	'TR':'65',
+				'UP':'67',	'UT':'69',	'WB':'71'
+			},
+			'Growth':{
+				'AN':'73',	'AP':'75',	'AR':'77',	'AS':'79',	'BR':'81',
+				'CH':'83',	'CT':'85',	'DL':'87',	'DN':'89',
+				'GA':'91',	'GJ':'93',	'HP':'95',	'HR':'97',	'JH':'99',	'JK':'101',
+				'KA':'103',	'KL':'105',	'LA':'107',	'LD':'109',	'MH':'111',	'ML':'113',
+				'MN':'115',	'MP':'117',	'MZ':'119',	'NL':'121',	'OR':'123',	'PB':'125',
+				'PY':'127',	'RJ':'129',	'SK':'131',	'TG':'133',	'TN':'135',	'TR':'137',
+				'UP':'139',	'UT':'141',	'WB':'143'
+			}
+		}
+		document.getElementsByClassName('state-total-cases')[0].setAttribute
+		("src","//plotly.com/~abhijeet8/"+statesPlot['Total'][stateCode]+".embed")
+		document.getElementsByClassName('state-daily-cases')[0].setAttribute
+		("src","//plotly.com/~abhijeet8/"+statesPlot['Daily'][stateCode]+".embed")
+		document.getElementsByClassName('state-test-cases')[0].setAttribute
+		("src","//plotly.com/~abhijeet9/"+statesPlot['Test'][stateCode]+".embed")
+		document.getElementsByClassName('state-growth-rate')[0].setAttribute
+		("src","//plotly.com/~abhijeet9/"+statesPlot['Growth'][stateCode]+".embed")
+	</script>
+	<script type="text/jsx" src="/react.js"></script>
+	
+<%- include('footer'); -%>

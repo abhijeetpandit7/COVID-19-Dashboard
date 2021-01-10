@@ -1,0 +1,38 @@
+<!-- Home page -->
+<%- include('header'); -%>
+
+	<%- include('keyDataIN'); -%>
+
+	<%- include('detailDataIN'); -%>
+
+		<div class="sub-section mt-4 pb-4">
+			<p class="heading mb-4">Districtwise Cases</p>
+			<div style="width:95%;  height:45rem; border-radius: 7px" class="sub-section mx-auto">
+				<iframe src="India.html" class="map"></iframe>
+			</div>
+		</div>
+		<div class="sub-section mt-4 pb-4 pt-4">
+			<div style="width:95%;  height:30rem; border-radius: 7px" class="sub-section mx-auto">
+				<iframe width="100%" height="100%" frameborder="0" scrolling="no" 
+				src="//plotly.com/~abhijeet8/1.embed"></iframe>
+			</div>
+		</div>
+		<div class="sub-section mt-4 pb-4 pt-4">
+			<div style="width:95%;  height:30rem; border-radius: 7px" class="sub-section mx-auto d-flex justify-content-around">
+				<iframe width="50%" class="state-total-cases" height="100%" frameborder="0" scrolling="no" 
+				src="//plotly.com/~abhijeet8/3.embed"></iframe>
+				<iframe width="50%" height="100%" frameborder="0" scrolling="no" 
+				src="//plotly.com/~abhijeet8/5.embed"></iframe>
+			</div>
+		</div>
+		<div class="sub-section mt-4 pb-4 pt-4">
+			<div style="width:95%;  height:30rem; border-radius: 7px" class="sub-section mx-auto d-flex justify-content-around">
+				<iframe width="50%" class="state-total-cases" height="100%" frameborder="0" scrolling="no" 
+				src="//plotly.com/~abhijeet8/7.embed"></iframe>
+				<iframe width="50%" height="100%" frameborder="0" scrolling="no" 
+				src="//plotly.com/~abhijeet8/9.embed"></iframe>
+			</div>
+		</div>
+		<span class="hidden">India</span>>
+	
+<%- include('footer'); -%>

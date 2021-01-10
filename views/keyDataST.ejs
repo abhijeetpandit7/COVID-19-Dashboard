@@ -1,0 +1,61 @@
+<!-- States cases bars -->
+<div class="middle-section container-fluid-state" id="middle">
+    
+    <!-- Dropdown to select states -->
+    <div class="dropdown mb-4">
+        <button class="btn dropbtn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" 
+        aria-haspopup="true" aria-expanded="false">
+          Choose State
+        </button>
+        <div class="dropdown-menu menubar" aria-labelledby="dropdownMenu2">
+            <header>
+            </header>
+        </div>
+    </div>
+    
+    <!-- State Key Insights -->
+    <div class="sub-section pb-3">
+        <p class="stateHeader heading"></p>
+        <p class="secondary-text stateTimestamp"></p>
+        <div class="d-flex justify-content-around mb-3">      
+            <div class="card border-danger ml-4">
+                <div class="card-body text-danger">
+                    <p class="card-title">Confirmed</p>
+                    <p class="stateConfirmed cardText"></p>
+                    <p class="stateDeltaConfirmed deltaText">&uarr;</p>
+                </div>
+            </div>
+            <div class="card border-info">
+                <div class="card-body text-info">
+                    <p class="card-title">Active</p> 
+                    <p class="stateActive cardText"></p>
+                    <span class="stateActivePer deltaText"></span>
+                </div>
+            </div>
+            <div class="card border-success">
+                <div class="card-body text-success">
+                    <p class="card-title">Recovered</p>
+                    <p class="stateRecovered cardText"></p>
+                    <span class="stateRecoveredPer deltaText"></span>
+                    <!-- <p class="stateDeltaRecovered deltaText">&uarr;</p> -->
+                </div>
+            </div>
+            <div class="card border-secondary">
+                <div class="card-body text-secondary">
+                    <p class="card-title">Deceased</p>
+                    <p class="stateDeceased cardText"></p>
+                    <span class="stateDeceasedPer deltaText"></span>
+                    <!-- <p class="stateDeltaDeceased deltaText">&uarr;</p> -->
+                </div>
+            </div>
+            <div class="card border-warning">
+                <div class="card-body text-warning">
+                    <p class="card-title">Tests</p>
+                    <p class="stateTest cardText"></p>
+                    <p class="stateDeltaTest deltaText">&uarr;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    

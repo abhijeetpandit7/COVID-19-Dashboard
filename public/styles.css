@@ -1,0 +1,235 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+	background-color: #164A41;
+}
+
+/* Sections */
+.top-section{
+  background-color: black;
+  color: #fff;
+	width: 80%;
+	border-radius: 15px;
+  margin-top : 35px;
+}
+
+/* #2e3652 */
+.middle-section{
+	margin-top: 35px;
+  background-color: #4D774E;
+  color: #fff;
+}
+.bottom-section{
+  background-color: #164A41;
+  color: #fff;
+}
+.container-fluid{
+  padding: 2% 10%;
+}
+.container-fluid-state{
+  padding: 2% 10%;
+}
+
+/* Navbar */
+.navbar {
+    border: 10px;
+    letter-spacing: 3px;
+		height: 1rem;
+}
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.nav-item{
+  padding: 0 18px;
+  /* font-size: 1.2rem; */
+}
+.navbar-nav li a:hover{
+	color: #7EC27F !important;
+}
+
+/* Top Section */
+#top.container-fluid{
+  padding: 2% 1%;
+}
+
+/* Middle Section */
+.sub-section{
+  background: #9DC88D;
+	border-radius: 15px;
+	width: 100%;
+	text-align: left;
+}
+.plot-section{
+  width:95%; 
+  height:30rem; 
+  background-color:#164A41; 
+  border-radius: 7px
+}
+.heading{
+	font-weight: 700;
+	font-size : 1.5rem;
+	padding: 40px 30px 0;
+	letter-spacing: 2px;
+	opacity: 0.9;
+}
+.btn{
+	width: 32rem;
+  /* height: 124px; */
+  /* margin: 0 1rem; */
+  /* font-size: 17px; */
+  /* font-weight: 500; */
+}
+.card{
+	width: 30rem;
+  height: 10rem;
+  margin: 0 2rem 0 0;
+  opacity: 0.9;
+  text-align: center;
+}
+.card-title{
+  font-weight: 600;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+.cardText{
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+.deltaText{
+  opacity: 0.7;
+}
+.dropbtn{
+  height: 3rem;
+  width: 32.6rem;;
+}
+.deltaDeceased, .deltaConfirmed, .deltaRecovered{
+	font-size: 1rem;
+	opacity: 0.8;
+}
+.secondary-text{
+	padding: 0 30px;
+	opacity: 0.7;
+}
+.table {
+  border-collapse:collapse;
+  border-spacing: 0;
+  width: 100%;
+	table-layout: fixed;
+	margin-bottom: 0;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: "\25B4\25BE"
+}
+.scroll{
+	overflow-y: scroll;
+	height: 28rem;
+}
+.scroll-state{
+	overflow-y: scroll;
+	height: 25rem;
+}
+.menubar{
+	overflow-y: scroll;
+	height: 19.6rem;
+}
+.tableData {
+  font-weight: 500; 
+  /* opacity: 0.9; */
+}
+thead :hover{
+	cursor: pointer;
+}
+th, td {
+  text-align: left;
+  font-size: 0.9rem;
+  padding: 16px;
+	color: white;
+	/* opacity: 0.9; */
+	height: 35px;
+}
+tr:nth-child(even) {
+  background-color: #4D774E;
+	border: none;
+}
+tr:nth-child(odd) {
+  background-color: #164A41;
+}
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+	background-color: #4D774E;
+}
+th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+th:not([scope=row]):first-child {
+  left: 0;
+  z-index: 3;
+}
+.table-hover {
+  background-color: #7EC27F;
+}
+.container-table{
+  padding: 2% 2% 1%;
+}
+a:link, a:visited{
+	color: #fff;
+}
+a:hover{
+	border: 0 0 1px;
+	border-color: #fff;
+	opacity: 0.8;
+}
+.bulletins{
+	opacity: 0.8;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	font-weight: 500;
+}
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4D774E;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7EC27F;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9DC88D;
+}
+/* Map */
+.map{
+  width:60rem; 
+  height:45rem;
+  border: 0;
+  padding-left: 15%;
+}
+.map-state{
+  width:29rem; 
+  height:26rem;
+  border: 0;
+}
+.hidden{
+  visibility: hidden; 
+}
+/* Bottom Section */
+#bottom .bottom-text{
+  margin: 0 auto;
+  color: #fff;
+  opacity: 0.8;
+  margin: 2rem 0;
+}
